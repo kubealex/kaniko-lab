@@ -1,4 +1,4 @@
-FROM alpine
+FROM ubuntu:xenial
 LABEL description="Creating a custom httpd image"
 MAINTAINER Alessandro Rossi <al.rossi87@gmail.com>
 RUN apt-get install -y httpd
