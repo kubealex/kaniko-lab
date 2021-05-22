@@ -1,7 +1,7 @@
 FROM alpine
 LABEL description="Creating a custom httpd image"
-MAINTAINER Alessandro Rossi <arossi@extraordy.com>
-RUN yum install -y httpd
+MAINTAINER Alessandro Rossi <al.rossi87@gmail.com>
+RUN apt-get install -y httpd
 EXPOSE 80
 ENV TestVar "This is a test environment variable"
 ADD index.html /var/www/html/
